@@ -4,6 +4,8 @@ import BannerSection1 from './components/BannerSection1'
 import BarPrimary from './components/BarPrimary'
 import NavBarLoop from './components/NavBarLoop'
 import BannerSecondary2 from './components/BannerSecondary2'
+import SectionColares from './components/SectionColares'
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
         <NavBarLoop />
       </section>
       <BannerSecondary2 />
+      <SectionColares />
     </>
   )
 }

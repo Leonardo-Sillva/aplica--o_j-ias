@@ -7,31 +7,31 @@ const BannerSecondary2 = () => {
   return (
     <div>
       <div>
-        <h1 className="uppercase font-playfair text-center text-[2rem] py-1">navegue poruma ampla gama de peças</h1>
-        <div className="grid grid-cols-4 gap-4 px-8 py-4">
+        <h1 className="uppercase font-playfair text-center text-[2rem] py-1">navegue por uma ampla gama de peças</h1>
+        <div className="grid grid-cols-4 gap-4 px-8 py-6 mb-4 overflow-x-auto max-sm:flex">
 
-          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0'>
+          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0 max-sm:h-73 max-sm:w-[75vw]'>
             <div style={{ backgroundImage: `url(${image_1})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
             <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Anéis</h2>
           </a>
 
-          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative'>
+          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0 max-sm:h-73 max-sm:w-[75vw]'>
             <div style={{ backgroundImage: `url(${image_2})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
             <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Anéis</h2>
           </a>
 
-          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative'>
+          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0 max-sm:h-73 max-sm:w-[75vw]'>
             <div style={{ backgroundImage: `url(${image_3})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
             <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Anéis</h2>
           </a>
 
-          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative'>
+          <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0 max-sm:h-73 max-sm:w-[75vw]'>
             <div style={{ backgroundImage: `url(${image_4})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
