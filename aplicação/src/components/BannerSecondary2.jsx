@@ -21,21 +21,21 @@ const BannerSecondary2 = () => {
             <div style={{ backgroundImage: `url(${image_2})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
-            <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Anéis</h2>
+            <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Pulseiras</h2>
           </a>
 
           <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0 max-sm:h-73 max-sm:w-[75vw]'>
             <div style={{ backgroundImage: `url(${image_3})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
-            <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Anéis</h2>
+            <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Correntes</h2>
           </a>
 
           <a href="#" className='h-73 bg-cover cursor-pointer rounded-[0.5rem] bg-amber-600 overflow-hidden relative shrink-0 max-sm:h-73 max-sm:w-[75vw]'>
             <div style={{ backgroundImage: `url(${image_4})` }} className="h-full w-full bg-cover transition-transform duration-1000 ease-out hover:scale-135">
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
-            <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Anéis</h2>
+            <h2 className="text-white font-playfair text-3xl absolute bottom-0 left-0 pl-10 pb-10">Com Pingentes</h2>
           </a>
         </div>
 

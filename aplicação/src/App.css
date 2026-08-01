@@ -20,3 +20,22 @@
 .animate-marquee {
   animation: marquee 20s linear infinite;
 }
+
+.meu-grid {
+  grid-template-areas:
+    "a b c d"
+    "e f g d";
+}
+
+@media (max-width: 767px) {
+  .meu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas:
+      "a b"
+      "c e"
+      "f g"
+      "d d";
+  }
+}

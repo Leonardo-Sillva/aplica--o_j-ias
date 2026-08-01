@@ -24,9 +24,9 @@ const SectionColares = () => {
 
     return (
         <div>
-            <div className="py-10 h-[1200px] grid grid-cols-4 grid-rows-2 gap-4" style={{gridTemplateAreas: "'a b c d' 'e f g d'"}}>
+            <div className="py-10 h-[1200px] grid grid-cols-4 grid-rows-2 gap-4 max-md:grid-cols-2 max-md:grid-rows-4 meu-grid" >
                 <a href="#" className="[grid-area:a] rounded-2xl hover:border border-gray-400 ">
-                    <div className='mx-4 mt-12 grid'>
+                    <div className='mx-4 mt-12 grid '>
 
                         <img src={colar_1} alt="" className={`col-start-1 row-start-1 transition-opacity ease-in-out duration-500 ${hover ? "opacity-0" : "opacity-100"}`} onMouseEnter={() => sethover(true)} onMouseLeave={() => sethover(false)} />
 
@@ -73,14 +73,13 @@ const SectionColares = () => {
                         </div>
                     </div>
                 </a>
-                <a href="#" className="[grid-area:d] border border-amber-100">
-                    <div>
-                         
-                         coloque a imagem no background do A
 
-
-                    </div>
+                <a href="#" className="[grid-area:d] border border-amber-100 relative overflow-hidden rounded-2xl ">
+                    <div style={{ backgroundImage: `url(${colar_banner})` }} className='h-full w-full bg-center transition-transform duration-1000 ease-out hover:scale-135'></div>
+                    <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/90 via-black/60 to-transparent pointer-events-none"></div>
+                    <h1 className='absolute bottom-0 pb-15 pl-10 text-white font-playfair text-3xl max-lg:pl-4'>Com Pingente</h1>
                 </a>
+
                 <a href="#" className="[grid-area:e] rounded-2xl hover:border border-gray-400 ">
                     <div className='mx-4 mt-12 grid'>
 
