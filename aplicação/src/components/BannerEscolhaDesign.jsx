@@ -63,13 +63,13 @@ const BannerEscolhaDesign = () => {
                     <h1 className="font-playfair max-md:text-2xl max-md:mb-8">Escolha Por Design</h1>
                     <p className="font-bold text-2xl bg-green-400 rounded-4xl px-3.5 py-2 max-md:w-fit max-md:text-[19px]">316L</p>
                 </div>
-                <div className="grid meu-grid2 grid-cols-4 grid-rows-1 px-4">
+                <div className="grid meu-grid2 grid-cols-4 grid-rows-1 px-4 overflow-x-auto max-sm:flex">
                     {aneis.map((anel) => (
-                        <div key={anel.area} style={{ gridArea: anel.area, }} className=' grid px-4 rounded-2xl hover:border border-gray-400 '>
+                        <div key={anel.area} style={{ gridArea: anel.area, }} className=' grid px-4 rounded-2xl hover:border border-gray-400 overflow-hidden shrink-0'>
 
-                            <img src={anel.imagem} alt="" className={`col-start-1 row-start-1 cursor-pointer transition-opacity duration-500 ease-in-out py-14 ${anel.hover ? "opacity-0" : "opacity-100"}`} onMouseEnter={() => anel.sethover(true)} onMouseLeave={() => anel.sethover(false)} />
+                            <img src={anel.imagem} alt="" className={`col-start-1 row-start-1 cursor-pointer transition-opacity duration-500 ease-in-out py-14 max-sm:h-100 ${anel.hover ? "opacity-0" : "opacity-100"}`} onMouseEnter={() => anel.sethover(true)} onMouseLeave={() => anel.sethover(false)} />
 
-                            <img src={anel.hover_imagem} alt="" className={`col-start-1 row-start-1 cursor-pointer transition-opacity duration-500 ease-in-out py-14 ${anel.hover ? "opacity-100" : "opacity-0"}`} onMouseEnter={() => anel.sethover(true)} onMouseLeave={() => anel.sethover(false)} />
+                            <img src={anel.hover_imagem} alt="" className={`col-start-1 row-start-1 cursor-pointer transition-opacity duration-500 ease-in-out py-14 max-sm:h-100 ${anel.hover ? "opacity-100" : "opacity-0"}`} onMouseEnter={() => anel.sethover(true)} onMouseLeave={() => anel.sethover(false)} />
 
                             <a href="#" className='hover:text-[#4C4C4C]'>
                                 <h1>{anel.titulo}</h1>
