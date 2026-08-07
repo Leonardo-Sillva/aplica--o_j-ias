@@ -30,7 +30,7 @@ const SectionColares = () => {
 
                         <img src={colar_1} alt="" className={`col-start-1 row-start-1 transition-opacity ease-in-out duration-500 ${hover ? "opacity-0" : "opacity-100"}`} onMouseEnter={() => sethover(true)} onMouseLeave={() => sethover(false)} />
 
-                        <img src={hover_colar_1} alt="" className={`col-start-1 row-start-1 transition-opacity duration-500 ${hover ? "opacity-100" : "opacity-0"}`} onMouseEnter={() => sethover(true)} onMouseLeave={() => sethover(false)}/>
+                        <img src={hover_colar_1} alt="" className={`col-start-1 row-start-1 transition-opacity ease-in-out duration-500 ${hover ? "opacity-100" : "opacity-0"}`} onMouseEnter={() => sethover(true)} onMouseLeave={() => sethover(false)}/>
                         <div className='mt-16'>
                             <h1>Colar Masculino Ícone Preto</h1>
                             <div className='flex mb-4'>

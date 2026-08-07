@@ -39,3 +39,7 @@
       "d d";
   }
 }
+
+.meu-grid2 {
+  grid-template-areas: "a b c d";
+}
