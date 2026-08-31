@@ -8,6 +8,7 @@ import SectionColares from './components/SectionColares'
 import BannerEscolhaDesign from './components/BannerEscolhaDesign'
 import BannerMan from './components/BannerMan'
 import SectionPulseiras from './components/SectionPulseiras'
+import SectionBrincos from './components/SectionBrincos'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <BannerMan />
       </section>
       <SectionPulseiras/>
+      <SectionBrincos/>
     </>
   )
 }
