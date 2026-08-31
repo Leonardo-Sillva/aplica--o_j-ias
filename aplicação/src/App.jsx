@@ -6,6 +6,8 @@ import NavBarLoop from './components/NavBarLoop'
 import BannerSecondary2 from './components/BannerSecondary2'
 import SectionColares from './components/SectionColares'
 import BannerEscolhaDesign from './components/BannerEscolhaDesign'
+import BannerMan from './components/BannerMan'
+import SectionPulseiras from './components/SectionPulseiras'
 
 function App() {
   return (
@@ -22,6 +24,11 @@ function App() {
       <BannerSecondary2 />
       <SectionColares />
       <BannerEscolhaDesign />
+      <section className="bg-[url('./assets/DESKTOP-BANNER-MAN.webp')] h-[595px] relative overflow-hidden bg-center mx-4 rounded-[8px] mb-10 max-md:h-[390px] max-md:bg-cover">
+        <div className='absolute inset-0 bg-black/30'></div>
+        <BannerMan />
+      </section>
+      <SectionPulseiras/>
     </>
   )
 }

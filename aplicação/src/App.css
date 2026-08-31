@@ -43,3 +43,11 @@
 .meu-grid2 {
   grid-template-areas: "a b c d";
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
