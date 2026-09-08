@@ -27,9 +27,9 @@ const AcessoriosImportantes = () => {
   return (
     <div>
       <h1 className="text-center font-playfair text-4xl mb-10">POR QUÊ OS ACESSÓRIOS SÃO TÃO <br /> IMPORTANTES?</h1>
-      <div className='flex gap-4 mb-14 overflow-x-scroll'>
+      <div className='flex mb-14 overflow-x-scroll scrollbar-hide'>
         {acessorios.map((acessorio) => (
-          <div key={acessorio.key} className='bg-[#F5F3F6] w-[320px] h-[640px] rounded-3xl overflow-hidden ml-4 shrink-0'>
+          <div key={acessorio.key} className='bg-[#F5F3F6] w-[313px] h-[640px] rounded-3xl overflow-hidden ml-6 shrink-0'>
             <img src={acessorio.img} alt="" className='mb-3.5'/>
             <h1 className='text-center text-[20px] mb-2 font-playfair px-5'>{acessorio.text}</h1>
             <p className='text-center text-[#696f70] px-5'>{acessorio.paragrafo}</p>

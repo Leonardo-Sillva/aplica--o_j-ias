@@ -28,10 +28,10 @@ const CardBeneficios = () => {
 ]
     return (
         <div>    
-            <div className='flex justify-center gap-4 mb-14 overflow-x-scroll'>
+            <div className='flex gap-6 mb-14 overflow-x-scroll scrollbar-hide mx-4'>
                 {cards.map((card) => (
-                    <div key={card.key} className='bg-[#F5F3F6] w-[320px] h-[250px] rounded-3xl overflow-hidden ml-4 shrink-0'>
-                        <img src={card.img} alt="" className='mb-3.5' />
+                    <div key={card.key} className='bg-[#F5F3F6] w-[318px] h-[250px] rounded-3xl flex flex-col items-center justify-center max-lg:shrink-0'>
+                        <img src={card.img} alt="" className='mb-3.5 w-15' />
                         <h1 className='text-center text-[20px] mb-2 font-playfair px-5'>{card.text}</h1>
                         <p className='text-center text-[#696f70] px-5'>{card.paragrafo}</p>
                     </div>
