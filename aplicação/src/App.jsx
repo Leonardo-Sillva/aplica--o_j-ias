@@ -13,6 +13,7 @@ import SectionReviews from './components/SectionReviews'
 import SectionVideo from './components/SectionVideo'
 import AcessoriosImportantes from './components/AcessoriosImportantes'
 import CardBeneficios from './components/CardBeneficios'
+import CardFooter from './components/CardFooter'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <SectionVideo/>
       <AcessoriosImportantes/>
       <CardBeneficios/>
+      <CardFooter/>
     </>
   )
 }
