@@ -4,8 +4,6 @@ import img_perfil_3 from '../assets/img_review_3.webp'
 import img_perfil_4 from '../assets/img_review_4.webp'
 import img_perfil_5 from '../assets/img_review_5.webp'
 
-import star from '../assets/star.svg'
-
 const SectionReviews = () => {
 
   const opinions = [
@@ -42,7 +40,7 @@ const SectionReviews = () => {
   ]
 
   return (
-    <div className='h-[800px]'>
+    <div className='h-[480px]'>
       <h1 className='text-center text-4xl font-playfair mb-10'>Reviews</h1>
       <div className='flex overflow-x-auto gap-4 scrollbar-hide'>
         {opinions.map((opinion) => (

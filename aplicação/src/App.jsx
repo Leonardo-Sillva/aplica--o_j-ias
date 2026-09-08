@@ -10,6 +10,9 @@ import BannerMan from './components/BannerMan'
 import SectionPulseiras from './components/SectionPulseiras'
 import SectionBrincos from './components/SectionBrincos'
 import SectionReviews from './components/SectionReviews'
+import SectionVideo from './components/SectionVideo'
+import AcessoriosImportantes from './components/AcessoriosImportantes'
+import CardBeneficios from './components/CardBeneficios'
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
       <SectionPulseiras/>
       <SectionBrincos/>
       <SectionReviews/>
+      <SectionVideo/>
+      <AcessoriosImportantes/>
+      <CardBeneficios/>
     </>
   )
 }
