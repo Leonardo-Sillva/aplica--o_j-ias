@@ -12,10 +12,10 @@ import seta from '../assets/seta.svg'
 const CardFooter = () => {
     return (
         <div>
-            <div className="h-[500px] bg-[#000000] text-white flex justify-between pl-22 pr-46 pt-12 border-b-[1px] border-[blue]">
-                <div className="flex flex-col gap-5">
-                    <img src={logo} alt="" className='w-[170px]' />
-                    <p className="w-[450px]">Na Hey Dude, oferecemos joias e acessórios masculinos de qualidade com atendimento dedicado. Nosso compromisso é garantir sua satisfação em cada compra, tornando sua experiência simples, segura e marcante.
+            <div className="h-[500px] bg-[#000000] text-white flex justify-between pl-22 pr-46 pt-12 border-b-[1px] border-[blue] max-md:pl-0 max-md:pr-0 max-md:border-none">
+                <div className="flex flex-col gap-5 max-md:items-center max-md:text-center max-md:ml-2">
+                    <img src={logo} alt="" className='w-[170px] flex justify-center ' />
+                    <p className="w-[450px] max-md:w-[370px]">Na Hey Dude, oferecemos joias e acessórios masculinos de qualidade com atendimento dedicado. Nosso compromisso é garantir sua satisfação em cada compra, tornando sua experiência simples, segura e marcante.
                     </p>
                     <p>ATENDIMENTO AO CLIENTE</p>
                     <p className="font-bold">SAC (Serviço de Atendimento ao Consumidor)</p>
@@ -27,7 +27,7 @@ const CardFooter = () => {
                     <p>Seg. à Sex. 9:00h às 18:00h</p>
                 </div>
 
-                <div>
+                <div className='max-md:hidden'>
                     <h1 className="font-playfair mb-6 text-[18px] font-bold">Nossas Politicas</h1>
                     <ul className="flex flex-col gap-4 text-[17px]">
                         <li><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Trocas e Devoluções</a></li>
@@ -40,7 +40,7 @@ const CardFooter = () => {
                         <li><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Política de Envio, Prazos e Entrega</a></li>
                     </ul>
                 </div>
-                <div>
+                <div className='max-md:hidden'>
                     <h1 className="font-playfair mb-6 text-[18px] font-bold">Nossos Termos</h1>
                     <ul className="flex flex-col gap-4 text-[17px]">
                         <li><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Termos de Uso</a></li>
@@ -53,17 +53,60 @@ const CardFooter = () => {
                 </div>
             </div>
 
-            <div className='bg-black flex justify-between px-20 py-7'>
-                <div className='flex items-center'>
+
+            <div className='hidden bg-black text-white max-md:flex max-md:justify-center py-4'>
+                <select id="Politicas" className="flex flex-col gap-4 text-[17px] bg-black">
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Nossas Politicas</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Trocas e
+                        Devoluções</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Termos de Uso</a>
+                    </option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Termos de
+                        serviço</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Políticas de
+                        Privacidade</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>FAQ</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Como Rastrear Meu
+                        Pedido</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Políticas de
+                        Reembolso</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Política de Envio,
+                        Prazos e Entrega</a></option>
+                </select>
+            </div>
+
+            <div className='hidden bg-black text-white max-md:flex max-md:justify-center'>
+                <select id="Politicas" className="flex flex-col gap-4 text-[17px] bg-black">
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Nossos Termos</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Termos de Uso</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Termos de Serviço</a>
+                    </option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Trocas e Devoluções</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Política de Envio, Prazos e Entrega</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Políticas de Privacidade</a></option>
+                    <option><a href="#" className='transition-all ease-in-out duration-200 hover:text-[#2637E2]'>Políticas de Reembolso</a></option>
+                </select>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div className='bg-black flex justify-between px-20 py-7 max-md:flex-col'>
+                <div className='flex items-center max-md:flex-col'>
                     <div>
-                        <select id="moedas" name="moedas" className='bg-black rounded-2xl mr-8 text-white'>
+                        <select id="moedas" name="moedas" className='bg-black rounded-2xl mr-8 text-white max-md:mb-4 max-md:mr-0'>
                             <option value="BRL">Real Brasileiro (R$)</option>
                             <option value="USD">Dólar Americano (US$)</option>
                             <option value="EUR">Euro (€)</option>
                             <option value="GBP">Libra Esterlina (£)</option>
                         </select>
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex gap-2 max-md:mb-5 justify-center'>
                         <img src={card_1} alt="" className='w-[45px]' />
                         <img src={card_2} alt="" className='w-[45px]' />
                         <img src={card_3} alt="" className='w-[45px]' />
@@ -72,9 +115,9 @@ const CardFooter = () => {
                         <img src={card_6} alt="" className='w-[45px]' />
                     </div>
                 </div>
-                <div className='flex items-center'>
-                    <p className='text-[#c2dbdb] mr-8'>Copyright © 2026.</p>
-                    <a href="#"><img src={seta} alt="" className='bg-white rounded-[50px] p-3'/></a>
+                <div className='flex items-center max-md:flex-col max-md:justify-center'>
+                    <p className='text-[#c2dbdb] mr-8 max-md:mb-7 max-md:mr-0'>Copyright © 2026.</p>
+                    <a href="#" className='flex justify-end'><img src={seta} alt="" className='bg-white rounded-[50px] p-3 ' /></a>
                 </div>
             </div>
 
